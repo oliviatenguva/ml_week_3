@@ -96,9 +96,9 @@ print(cereal.mfr.value_counts())
 
 top_manufacturers = ['K', 'G']
 # Lambda function explanation:
-# lambda x: x if x in top else "Other"
+# lambda x: x if x in top_manufacturers else "Other"
 # - Takes input x (each manufacturer code)
-# - Returns x if it's in our top list
+# - Returns x if it's in our top_manufacturers list
 # - Otherwise returns "Other"
 # Lambda functions are small anonymous functions useful for simple operations
 cereal.mfr = (cereal.mfr.apply(lambda x: x if x in top_manufacturers
